@@ -32,6 +32,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   jacks_dbt_lab:
-      # Applies to all files under models/example/
-      example:
+      covid:
+          materialized: table
+      staging:
           materialized: view

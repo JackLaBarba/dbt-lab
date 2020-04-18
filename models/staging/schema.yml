@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: covid19_usafacts
+    database: bigquery-public-data
+    tables:
+      - name: confirmed_cases
+  - name: census_bureau_acs
+    database: bigquery-public-data
+    tables:
+      - name: county_2018_1yr

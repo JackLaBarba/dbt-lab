@@ -5,12 +5,8 @@
 name: 'jacks_dbt_lab'
 version: '1.0.0'
 
-# This setting configures which "profile" dbt uses for this project.
-profile: 'jacks_dbt_lab'
+profile: 'jacks_dbt_lab'  # CHANGE this to your dbt profile name
 
-# These configurations specify where dbt should look for different types of files.
-# The `source-paths` config, for example, states that models in this project can be
-# found in the "models/" directory. You probably won't need to change these!
 source-paths: ["models"]
 analysis-paths: ["analysis"]
 test-paths: ["tests"]
@@ -26,10 +22,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
-
-# In this example config, we tell dbt to build all models in the example/ directory
-# as tables. These settings can be overridden in the individual model files
-# using the `{{ config(...) }}` macro.
 models:
   jacks_dbt_lab:
       covid:

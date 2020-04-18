@@ -1,0 +1,12 @@
+version: 2
+
+models:
+    - name: county_model
+      description: "County level information"
+      columns:
+        - name: geo_id
+          description: "The primary key for this table"
+          tests:
+              - unique
+              - not_null
+

@@ -3,10 +3,16 @@
 This is a project that I created to demonstrate
 [dbt](https://docs.getdbt.com/docs/introduction) and
 [BigQuery](https://cloud.google.com/bigquery). It creates a table in BigQuery
-that joins together data from BigQuery's publicly available Covid-19 and Census
-datasets. By combining these two sets of source data, we can derive new
-information. In this case, we calculate infections per 10,000 people in each US
+that joins together data from BigQuery's publicly available COVID-19 and Census
+datasets.
+
+![The data](/etc/data_lineage.png)
+
+By combining these two sets of source data, we can derive new
+information. In this case, I calculated confirmed cases per 10,000 people in each US
 county.
+
+![The results](/etc/model_example.png)
 
 # Setup
 
@@ -62,6 +68,7 @@ Your browser will automatically open up to a site describing the data models
 - Add more attributes to data data model and use those as features in a machine
   learning model
 - Apply dimensional modelling techniques
+- Add more tests
 
 # Resources:
 

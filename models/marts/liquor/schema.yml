@@ -1,8 +1,8 @@
 version: 2
 
 models:
-    - name: weather
-      description: "Iowa weather info"
+    - name: triple_sec_weather
+      description: "triple sec sales per day with weather info"
       columns:
         - name: date
           description: "The primary key for this table"

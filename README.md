@@ -2,9 +2,15 @@
 
 This is a project that I created to demonstrate
 [dbt](https://docs.getdbt.com/docs/introduction) and
-[BigQuery](https://cloud.google.com/bigquery). It creates a table in BigQuery
-that joins together data from BigQuery's publicly available COVID-19 and Census
-datasets.
+[BigQuery](https://cloud.google.com/bigquery). 
+
+There are two separate data marts here, one is about COVID-19, and the other
+one is about liquor sales in Iowa (which is a little more fun).
+
+## COVID
+
+These models create a table in BigQuery that joins together data from BigQuery's
+publicly available COVID-19 and Census datasets.
 
 ![The data](/etc/data_lineage.png)
 
@@ -13,6 +19,20 @@ information. In this case, I calculated confirmed cases per 10,000 people in eac
 county.
 
 ![The results](/etc/model_example.png)
+
+## Liquor
+
+This mart joins together Iowan liquor sales data with historical climate
+data.
+
+![The results](/etc/liquor_weather_data_lineage.png)
+
+The result is a model which shows the correlation between average
+temperature and triple sec sales. This supports the unsurprising hypothesis
+that Iowans drink more margaritas in warm months.
+
+![The results](/etc/triple_sec_versus_avg_temps.png)
+
 
 # Setup
 

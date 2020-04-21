@@ -24,7 +24,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 models:
   jacks_dbt_lab:
-      covid:
-          materialized: table
+      materialized: table
       staging:
+          materialized: view
+      transforms:
           materialized: view

@@ -1,0 +1,11 @@
+version: 2
+
+models:
+    - name: ghcnd_iowa_stations
+      description: "Global Historical Climatology Network stations in Iowa"
+      columns:
+        - name: id
+          description: "The primary key for this table"
+          tests:
+              - unique
+              - not_null

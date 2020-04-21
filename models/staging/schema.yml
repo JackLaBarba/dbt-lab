@@ -9,3 +9,11 @@ sources:
     database: bigquery-public-data
     tables:
       - name: county_2018_1yr
+  - name: iowa_liquor_sales
+    database: bigquery-public-data
+    tables:
+      - name: sales
+  - name: ghcn_d
+    database: bigquery-public-data
+    tables:
+      - name: ghcnd_stations
